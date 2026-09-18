@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		5AA618F43037A9EB0017B081 /* Mirai_Kakebo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mirai_Kakebo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A14CDDC303B77B40075F08D /* Mirai_Kakebo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mirai_Kakebo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -33,16 +33,8 @@
 			isa = PBXGroup;
 			children = (
 				5AA618F63037A9EB0017B081 /* Mirai_Kakebo */,
-				5AA618F53037A9EB0017B081 /* Products */,
+				5A14CDDC303B77B40075F08D /* Mirai_Kakebo.app */,
 			);
-			sourceTree = "<group>";
-		};
-		5AA618F53037A9EB0017B081 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5AA618F43037A9EB0017B081 /* Mirai_Kakebo.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -67,7 +59,7 @@
 			packageProductDependencies = (
 			);
 			productName = Mirai_Kakebo;
-			productReference = 5AA618F43037A9EB0017B081 /* Mirai_Kakebo.app */;
+			productReference = 5A14CDDC303B77B40075F08D /* Mirai_Kakebo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -95,7 +87,7 @@
 			mainGroup = 5AA618EB3037A9EB0017B081;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 5AA618F53037A9EB0017B081 /* Products */;
+			productRefGroup = 5AA618EB3037A9EB0017B081;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

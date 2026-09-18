@@ -1,0 +1,18 @@
+# Xcode
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# macOS
+.DS_Store
+
+# Xcode user-specific files
+*.moved-aside
+*.pbxuser
+*.mode1v3
+*.mode2v3

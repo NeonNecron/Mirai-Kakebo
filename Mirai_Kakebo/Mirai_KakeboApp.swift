@@ -1,32 +1,25 @@
-//
-//  Mirai_KakeboApp.swift
-//  Mirai_Kakebo
-//
-//  Created by Bruno Leal Villarreal on 20/08/26.
-//
-
 import SwiftUI
-import SwiftData
 
 @main
 struct Mirai_KakeboApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
+    @State private var progressViewModel =
+        ProgressViewModel()
+
+    @State private var accessibilitySettings =
+        AccessibilitySettings()
 
     var body: some Scene {
+
         WindowGroup {
-            ContentView()
+
+            MainTabView()
+                .environment(
+                    progressViewModel
+                )
+                .environment(
+                    accessibilitySettings
+                )
         }
-        .modelContainer(sharedModelContainer)
     }
 }
