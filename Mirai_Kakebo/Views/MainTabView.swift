@@ -19,6 +19,7 @@ struct MainTabView: View {
                     )
                 }
             
+            
             // MARK: - Kakebo
             
             KakeboView()
@@ -28,6 +29,7 @@ struct MainTabView: View {
                         systemImage: "yensign.circle.fill"
                     )
                 }
+            
             
             // MARK: - Juegos
             
@@ -39,6 +41,7 @@ struct MainTabView: View {
                     )
                 }
             
+            
             // MARK: - Premios
             
             RewardsView()
@@ -49,6 +52,7 @@ struct MainTabView: View {
                     )
                 }
             
+            
             // MARK: - Perfil
             
             ProfileView()
@@ -58,6 +62,20 @@ struct MainTabView: View {
                         systemImage: "person.fill"
                     )
                 }
+            
+            
+            // MARK: - Accesibilidad
+            // Pantalla utilizada para la actividad de accesibilidad
+            
+            NavigationStack {
+                AccessibilityDemoView()
+            }
+            .tabItem {
+                Label(
+                    "Accesibilidad",
+                    systemImage: "accessibility"
+                )
+            }
         }
         .tint(MiraiColors.primary)
         .environment(progressViewModel)
@@ -65,6 +83,8 @@ struct MainTabView: View {
     }
 }
 
+
 #Preview {
     MainTabView()
 }
+
